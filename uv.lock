@@ -3661,7 +3661,7 @@ requires-dist = [
     { name = "nomad-schema-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
     { name = "nomad-simulations", marker = "extra == 'plugins'", specifier = "==0.0.1" },
     { name = "perovskite-solar-cell-database", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git?rev=b29cbbd808a6c9c0c45cdd10c6e7982375342d9f#b29cbbd808a6c9c0c45cdd10c6e7982375342d9f" },
-    { name = "plugin-test", marker = "extra == 'plugins'", git = "https://github.com/PauloGitHB/plugin_test.git?rev=0705b80fe0078500cb889bc09e9cb461c949ba28#0705b80fe0078500cb889bc09e9cb461c949ba28" },
+    { name = "plugin-test", marker = "extra == 'plugins'", git = "https://github.com/PauloGitHB/plugin_test.git" },
     { name = "pynxtools", extras = ["convert"], marker = "extra == 'plugins'", specifier = "==0.5.0" },
 ]
 
@@ -4678,7 +4678,7 @@ wheels = [
 [[package]]
 name = "plugin-test"
 version = "0.1.0"
-source = { git = "https://github.com/PauloGitHB/plugin_test.git?rev=0705b80fe0078500cb889bc09e9cb461c949ba28#0705b80fe0078500cb889bc09e9cb461c949ba28" }
+source = { git = "https://github.com/PauloGitHB/plugin_test.git#0705b80fe0078500cb889bc09e9cb461c949ba28" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
