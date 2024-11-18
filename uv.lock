@@ -3635,6 +3635,7 @@ plugins = [
     { name = "nomad-schema-plugin-run" },
     { name = "nomad-schema-plugin-simulation-workflow" },
     { name = "nomad-simulations" },
+    { name = "oscilloscope-plugin" },
     { name = "perovskite-solar-cell-database" },
     { name = "plugin-test" },
     { name = "pynxtools", extra = ["convert"] },
@@ -3660,6 +3661,7 @@ requires-dist = [
     { name = "nomad-schema-plugin-run", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
     { name = "nomad-schema-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
     { name = "nomad-simulations", marker = "extra == 'plugins'", specifier = "==0.0.1" },
+    { name = "oscilloscope-plugin", marker = "extra == 'plugins'", git = "https://github.com/PauloGitHB/Oscilloscope_plugin.git" },
     { name = "perovskite-solar-cell-database", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git?rev=b29cbbd808a6c9c0c45cdd10c6e7982375342d9f#b29cbbd808a6c9c0c45cdd10c6e7982375342d9f" },
     { name = "plugin-test", marker = "extra == 'plugins'", git = "https://github.com/PauloGitHB/plugin_test.git" },
     { name = "pynxtools", extras = ["convert"], marker = "extra == 'plugins'", specifier = "==0.5.0" },
@@ -4390,6 +4392,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/d7/15/2c1ca80d4e37780514cc369004fce77e2748b54857b62eb217e9a243a669/orjson-3.10.7-cp39-cp39-musllinux_1_2_x86_64.whl", hash = "sha256:0fa5886854673222618638c6df7718ea7fe2f3f2384c452c9ccedc70b4a510a5", size = 167613 },
     { url = "https://files.pythonhosted.org/packages/3b/39/4888bacdd3b82a923ea306369b87ba5bcdafa8951cecc041c1cfef3e7d7f/orjson-3.10.7-cp39-none-win32.whl", hash = "sha256:8272527d08450ab16eb405f47e0f4ef0e5ff5981c3d82afe0efd25dcbef2bcd2", size = 142863 },
     { url = "https://files.pythonhosted.org/packages/0c/c5/c5cbff9dbd45e4f8c4fef4c74ae4819d003b9e97201f3b1066a71368faf3/orjson-3.10.7-cp39-none-win_amd64.whl", hash = "sha256:974683d4618c0c7dbf4f69c95a979734bf183d0658611760017f6e70a145af58", size = 137119 },
+]
+
+[[package]]
+name = "oscilloscope-plugin"
+version = "0.1.0"
+source = { git = "https://github.com/PauloGitHB/Oscilloscope_plugin.git#280557b63185ab801861dff6f8f7daf1bb25ba83" }
+dependencies = [
+    { name = "nomad-lab" },
+    { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
 ]
 
 [[package]]
